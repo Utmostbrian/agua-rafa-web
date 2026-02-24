@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: white;
+    color: #333;
+}
+
+/* HERO */
+.hero {
+    background: url('img/hero\ \(2\).png') center center no-repeat;
+    background-size: contain;
+    min-height: 400px;
+    position: relative;
+}
+
+/* LOGO */
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.logo img {
+    width: 120px;
+    height: auto;
+}
+
+/* ABOUT */
+.about {
+    padding: 40px 20px;
+    text-align: center;
+    background: #f9f9f9;
+}
+
+/* BENEFICIOS */
+.beneficios {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.slider {
+  width: 500px;   /*  ancho */
+  height: 450px;  /*  alto */
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+}
+
+.slider-track img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* FLECHAS */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  font-size: 25px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+/* PRODUCTS */
+.products-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product-card {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.product-card img {
+    width: 100%;
+}
+
+.descripcion {
+    font-size: 14px;
+    margin: 10px;
+}
+
+.product-card button {
+    background: #4285F4;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 80%;
+    border-radius: 30px;
+    margin-bottom: 15px;
+}
+
+/* INFO */
+.info {
+    padding: 40px 20px;
+    text-align: center;
+    background: #eef5fb;
+}
+
+.btn-maps {
+    background: #4285F4;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+/* FOOTER */
+.footer {
+    background: #4285F4;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* WHATSAPP */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .slider {
+    width: 95%;
+    height: 350px;
+  }
+
+  .logo img {
+    width: 90px;
+  }
+}

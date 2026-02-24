@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Agua de Mesa Rafa</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="hero">
+    <div class="logo">
+        <img src="img/Logo_agua_rafa.jpeg" alt="Logo Agua de Mesa Rafa">
+    </div>
+</header>
+
+<section class="about">
+    <h2>¿Quiénes somos?</h2>
+    <p>Somos una empresa familiar dedicada a la venta de agua de mesa pura y refrescante. Con atención personalizada, llevamos hidratación de calidad a tu mesa, negocio y eventos.</p>
+</section>
+
+<section class="beneficios">
+  <h2>¿Por qué elegir Agua de Mesa Rafa? </h2>
+
+  <div class="slider">
+    <button class="prev" onclick="moverSlide(-1)">❮</button>
+
+    <div class="slider-track" id="sliderTrack">
+      <img src="img/beneficio1.jpeg">
+      <img src="img/beneficio2.jpeg">
+      <img src="img/beneficio3.jpeg">
+    </div>
+
+    <button class="next" onclick="moverSlide(1)">❯</button>
+  </div>
+</section>
+
+<section class="products-section">
+    <h2>Nuestros Productos</h2>
+    <div class="products">
+
+        <div class="product-card">
+            <img src="img/30bs 2l.jpeg">
+            <h3>Botellas 2L x6</h3>
+            <p class="descripcion">Agua Purificada por Ósmosis Inversa, Pre-filtrada, Rayos UV y Ozonizada.</p>
+            <button onclick="contactar('Botellas 2L x6')">Pedir por WhatsApp</button>
+        </div>
+
+        <div class="product-card">
+            <img src="img/30bs.jpeg">
+            <h3>Botellas 600ml x12</h3>
+            <p class="descripcion">Agua Purificada por Ósmosis Inversa, Pre-filtrada, Rayos UV y Ozonizada.</p>
+            <button onclick="contactar('Botellas 600ml x12')">Pedir por WhatsApp</button>
+        </div>
+
+        <div class="product-card">
+            <img src="img/10bs.jpeg">
+            <h3>Botellón 10 Litros</h3>
+            <p class="descripcion">Agua Purificada por Ósmosis Inversa, Pre-filtrada, Rayos UV y Ozonizada.</p>
+            <button onclick="contactar('Botellón 10 Litros')">Pedir por WhatsApp</button>
+        </div>
+
+        <div class="product-card">
+            <img src="img/20 litros.jpeg">
+            <h3>Botellón 20 Litros</h3>
+            <p class="descripcion">Agua Purificada por Ósmosis Inversa, Pre-filtrada, Rayos UV y Ozonizada.</p>
+            <button onclick="contactar('Botellón 20 Litros')">Pedir por WhatsApp</button>
+        </div>
+
+    </div>
+</section>
+
+<section class="info">
+    <h2>Servicio y Cobertura</h2>
+    <p>Entregamos agua a domicilio en Villa Montes y zonas cercanas.</p>
+
+    <p>
+        B/Ferroviario C/ Subtte Barrau y 4 Vientos<br>
+        Villa Montes - Tarija - Bolivia
+        <br><br>
+        <a href="https://maps.app.goo.gl/kujrAfSCVZJe737T6" target="_blank" class="btn-maps">
+            Ver en Google Maps
+        </a>
+    </p>
+</section>
+
+<a href="https://wa.me/59167679056" class="whatsapp-btn" target="_blank">Pedir por WhatsApp</a>
+
+<footer class="footer">
+    <p><strong>Elaborado por:</strong> Maria Victoria Ysaacs Rizzo</p>
+    <p><strong>NIT:</strong> 5796957015</p>
+    <p>B/Ferroviario C/ Subtte Barrau y 4 Vientos<br>Villa Montes - Tarija - Bolivia</p>
+       <p><strong>web creada por:</strong> Brian Serrudo Beizaga</p>
+</footer>
+
+<script>
+let index = 0;
+const track = document.getElementById("sliderTrack");
+const total = track.children.length;
+
+function actualizarSlide(){
+  track.style.transform = "translateX(" + (-index * 100) + "%)";
+}
+
+function moverSlide(direccion){
+  index += direccion;
+  if(index < 0) index = total - 1;
+  if(index >= total) index = 0;
+  actualizarSlide();
+}
+
+setInterval(() => {
+  moverSlide(1);
+}, 5000);
+
+function contactar(producto) {
+    let mensaje = "Hola, quiero comprar: " + producto;
+    let url = "https://wa.me/59167679056?text=" + encodeURIComponent(mensaje);
+    window.open(url, "_blank");
+}
+</script>
+
+</body>
+</html>
