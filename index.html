@@ -2,258 +2,272 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Agua de Mesa Rafa</title>
+<title>Agua de Mesa Rafa — Villa Montes</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Barlow+Condensed:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <a href="index.html" class="nav-logo">
+    <img src="img/Logo_agua_rafa.png" alt="Agua de Mesa Rafa">
+  </a>
+  <div class="nav-links">
+    <a href="#nosotros">Nosotros</a>
+    <a href="#productos">Productos</a>
+    <a href="#sucursales">Sucursales</a>
+    <a href="https://wa.me/59167679056" class="nav-cta" target="_blank">Pedir ahora</a>
+  </div>
+</nav>
+
 <!-- HERO -->
-<header class="hero">
-  <nav class="navbar">
-    <a href="index.html" class="logo">
-      <img src="img/Logo_agua_rafa.png" alt="Logo Agua de Mesa Rafa">
-    </a>
-  </nav>
-
-  <div class="hero-content">
-    <div class="hero-badge">100% Villamontina</div>
-    <h1 class="hero-title">Agua pura.<br><span>Vida mejor.</span></h1>
-    <p class="hero-sub">Ósmosis Inversa · UV · Ozonización · Pre-filtrado</p>
+<section class="hero" id="inicio">
+  <div class="hero-bg">
+    <img src="img/hero (2).png" alt="" class="hero-img">
+    <div class="hero-overlay"></div>
   </div>
-
-  <div class="hero-wave">
-    <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#f0f7ff"/>
-    </svg>
-  </div>
-</header>
-
-<!-- POPUPS -->
-<div class="menu-pop">
-  <div class="item">
-    Visión
-    <div class="popup">
-      Ser la empresa líder en distribución de agua purificada en la región,
-      garantizando calidad, confianza y servicio.
+  <div class="hero-body">
+    <div class="hero-eyebrow reveal">
+      <span class="h-line"></span>
+      100% Villamontina
+      <span class="h-line"></span>
+    </div>
+    <h1 class="hero-title reveal d1">
+      Agua pura.<br><em>Vida mejor.</em>
+    </h1>
+    <p class="hero-desc reveal d2">Purificada por Ósmosis Inversa · Rayos UV · Ozonización</p>
+    <div class="hero-actions reveal d3">
+      <a href="#productos" class="btn-primary">Ver productos</a>
+      <a href="https://wa.me/59167679056" class="btn-ghost" target="_blank">Pedir por WhatsApp</a>
     </div>
   </div>
+  <div class="hero-scroll">
+    <span>Scroll</span>
+    <div class="scroll-bar"></div>
+  </div>
+</section>
 
-  <div class="item">
-    Quiénes somos
-    <div class="popup">
-      Empresa familiar dedicada a la venta de agua de mesa pura y refrescante,
-      con atención personalizada.
+<!-- ABOUT -->
+<section class="about" id="nosotros">
+  <div class="about-grid">
+    <div class="about-card reveal">
+      <div class="a-num">01</div>
+      <h3>Visión</h3>
+      <p>Ser la empresa líder en distribución de agua purificada en la región, garantizando calidad, confianza y servicio.</p>
+    </div>
+    <div class="about-card reveal d1">
+      <div class="a-num">02</div>
+      <h3>Quiénes somos</h3>
+      <p>Empresa familiar dedicada a la venta de agua de mesa pura y refrescante, con atención personalizada en cada entrega.</p>
+    </div>
+    <div class="about-card reveal d2">
+      <div class="a-num">03</div>
+      <h3>Objetivos</h3>
+      <p>Brindar agua purificada segura, ampliar nuestra cobertura y mejorar continuamente nuestros procesos.</p>
     </div>
   </div>
-
-  <div class="item">
-    Objetivos
-    <div class="popup">
-      Brindar agua purificada segura, ampliar cobertura y mejorar continuamente
-      nuestros procesos.
-    </div>
-  </div>
-</div>
+</section>
 
 <!-- PROCESO -->
-<div class="proceso-strip">
-  <div class="proceso-item"><p>Ósmosis Inversa</p></div>
-  <div class="proceso-divider"></div>
-  <div class="proceso-item"><p>Rayos UV</p></div>
-  <div class="proceso-divider"></div>
-  <div class="proceso-item"><p>Ozonización</p></div>
-  <div class="proceso-divider"></div>
-  <div class="proceso-item"><p>Pre-filtrado</p></div>
-</div>
+<section class="proceso">
+  <p class="p-label reveal">Proceso de purificación</p>
+  <div class="p-steps">
+    <div class="p-step reveal">
+      <span class="p-rom">I</span>
+      <span class="p-name">Pre-filtrado</span>
+    </div>
+    <span class="p-arr reveal d1">→</span>
+    <div class="p-step reveal d1">
+      <span class="p-rom">II</span>
+      <span class="p-name">Ósmosis Inversa</span>
+    </div>
+    <span class="p-arr reveal d2">→</span>
+    <div class="p-step reveal d2">
+      <span class="p-rom">III</span>
+      <span class="p-name">Rayos UV</span>
+    </div>
+    <span class="p-arr reveal d3">→</span>
+    <div class="p-step reveal d3">
+      <span class="p-rom">IV</span>
+      <span class="p-name">Ozonización</span>
+    </div>
+  </div>
+</section>
 
 <!-- BENEFICIOS -->
 <section class="beneficios">
-  <div class="section-label">Por qué elegirnos</div>
-  <h2>¿Por qué elegir<br>Agua de Mesa Rafa?</h2>
-
-  <div class="slider-container">
-    <div class="slider">
-      <button class="prev" onclick="moverSlide(-1)" aria-label="Anterior">&#8249;</button>
-      <div class="slider-track" id="sliderTrack">
-        <img src="img/beneficio1.jpeg" alt="Beneficio 1">
-        <img src="img/beneficio2.jpeg" alt="Beneficio 2">
-        <img src="img/beneficio3.jpeg" alt="Beneficio 3">
-      </div>
-      <button class="next" onclick="moverSlide(1)" aria-label="Siguiente">&#8250;</button>
+  <div class="ben-inner">
+    <div class="ben-text reveal">
+      <p class="eyebrow">Por qué elegirnos</p>
+      <h2>¿Por qué elegir<br><em>Agua de Mesa Rafa?</em></h2>
+      <p class="ben-desc">Cada botella pasa por cuatro etapas rigurosas de purificación. No vendemos solo agua — entregamos salud y confianza en cada gota.</p>
     </div>
-    <div class="slider-dots" id="sliderDots">
-      <span class="dot active" onclick="irASlide(0)"></span>
-      <span class="dot" onclick="irASlide(1)"></span>
-      <span class="dot" onclick="irASlide(2)"></span>
+    <div class="ben-slider reveal d1">
+      <div class="sl-wrap">
+        <button class="sl-btn prev" onclick="moverSlide(-1)">&#8592;</button>
+        <div class="sl-viewport">
+          <div class="sl-track" id="sliderTrack">
+            <img src="img/beneficio1.jpeg" alt="Beneficio 1">
+            <img src="img/beneficio2.jpeg" alt="Beneficio 2">
+            <img src="img/beneficio3.jpeg" alt="Beneficio 3">
+          </div>
+        </div>
+        <button class="sl-btn next" onclick="moverSlide(1)">&#8594;</button>
+      </div>
+      <div class="sl-dots" id="sliderDots">
+        <button class="sl-dot active" onclick="irASlide(0)"></button>
+        <button class="sl-dot" onclick="irASlide(1)"></button>
+        <button class="sl-dot" onclick="irASlide(2)"></button>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- PRODUCTOS -->
-<section class="products-section">
-  <div class="section-label">Lo que ofrecemos</div>
-  <h2>Nuestros Productos</h2>
+<section class="productos" id="productos">
+  <div class="prod-header">
+    <p class="eyebrow reveal">Lo que ofrecemos</p>
+    <h2 class="reveal d1">Nuestros <em>Productos</em></h2>
+  </div>
+  <div class="prod-grid">
 
-  <div class="products">
-
-    <div class="product-card">
-      <div class="product-img-wrap">
+    <article class="prod-card reveal">
+      <div class="prod-img-wrap">
         <img src="img/30bs 2l.jpeg" alt="Botellas 2L x6">
-        <div class="product-badge">Pack familiar</div>
+        <span class="prod-tag">Pack familiar</span>
       </div>
-      <div class="product-info">
-        <h3>Botellas 2L x6</h3>
-        <p class="descripcion">Agua Purificada por Ósmosis Inversa, Pre-filtrada, Rayos UV y Ozonizada.</p>
-        <button onclick="contactar('Botellas 2L x6')">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.104.543 4.082 1.497 5.797L0 24l6.38-1.461A11.934 11.934 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.85 0-3.585-.5-5.082-1.371l-.364-.216-3.786.866.899-3.685-.237-.381A9.934 9.934 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
-          Pedir por WhatsApp
-        </button>
+      <div class="prod-info">
+        <h3>Botellas 2L <em>×6</em></h3>
+        <p>Ósmosis Inversa · UV · Ozonizada</p>
+        <button onclick="contactar('Botellas 2L x6')">Pedir por WhatsApp &rarr;</button>
       </div>
-    </div>
+    </article>
 
-    <div class="product-card">
-      <div class="product-img-wrap">
+    <article class="prod-card reveal d1">
+      <div class="prod-img-wrap">
         <img src="img/30bs.jpeg" alt="Botellas 600ml x12">
-        <div class="product-badge">Pack portátil</div>
+        <span class="prod-tag">Pack portátil</span>
       </div>
-      <div class="product-info">
-        <h3>Botellas 600ml x12</h3>
-        <p class="descripcion">Agua Purificada por Ósmosis Inversa, Pre-filtrada, Rayos UV y Ozonizada.</p>
-        <button onclick="contactar('Botellas 600ml x12')">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.104.543 4.082 1.497 5.797L0 24l6.38-1.461A11.934 11.934 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.85 0-3.585-.5-5.082-1.371l-.364-.216-3.786.866.899-3.685-.237-.381A9.934 9.934 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
-          Pedir por WhatsApp
-        </button>
+      <div class="prod-info">
+        <h3>Botellas 600ml <em>×12</em></h3>
+        <p>Ósmosis Inversa · UV · Ozonizada</p>
+        <button onclick="contactar('Botellas 600ml x12')">Pedir por WhatsApp &rarr;</button>
       </div>
-    </div>
+    </article>
 
-    <div class="product-card">
-      <div class="product-img-wrap">
+    <article class="prod-card reveal d2">
+      <div class="prod-img-wrap">
         <img src="img/10bs.jpeg" alt="Botellón 10 Litros">
-        <div class="product-badge">Economico</div>
+        <span class="prod-tag">Económico</span>
       </div>
-      <div class="product-info">
-        <h3>Botellón 10 Litros</h3>
-        <p class="descripcion">Agua Purificada por Ósmosis Inversa, Pre-filtrada, Rayos UV y Ozonizada.</p>
-        <button onclick="contactar('Botellón 10 Litros')">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.104.543 4.082 1.497 5.797L0 24l6.38-1.461A11.934 11.934 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.85 0-3.585-.5-5.082-1.371l-.364-.216-3.786.866.899-3.685-.237-.381A9.934 9.934 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
-          Pedir por WhatsApp
-        </button>
+      <div class="prod-info">
+        <h3>Botellón <em>10 L</em></h3>
+        <p>Ósmosis Inversa · UV · Ozonizada</p>
+        <button onclick="contactar('Botellón 10 Litros')">Pedir por WhatsApp &rarr;</button>
       </div>
-    </div>
+    </article>
 
-    <div class="product-card">
-      <div class="product-img-wrap">
+    <article class="prod-card reveal d3">
+      <div class="prod-img-wrap">
         <img src="img/20 litros.jpeg" alt="Botellón 20 Litros">
-        <div class="product-badge">Más vendido</div>
+        <span class="prod-tag">Más pedido</span>
       </div>
-      <div class="product-info">
-        <h3>Botellón 20 Litros</h3>
-        <p class="descripcion">Agua Purificada por Ósmosis Inversa, Pre-filtrada, Rayos UV y Ozonizada.</p>
-        <button onclick="contactar('Botellón 20 Litros')">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.104.543 4.082 1.497 5.797L0 24l6.38-1.461A11.934 11.934 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.85 0-3.585-.5-5.082-1.371l-.364-.216-3.786.866.899-3.685-.237-.381A9.934 9.934 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
-          Pedir por WhatsApp
-        </button>
+      <div class="prod-info">
+        <h3>Botellón <em>20 L</em></h3>
+        <p>Ósmosis Inversa · UV · Ozonizada</p>
+        <button onclick="contactar('Botellón 20 Litros')">Pedir por WhatsApp &rarr;</button>
       </div>
-    </div>
+    </article>
 
   </div>
 </section>
 
 <!-- SUCURSALES -->
-<section class="info">
-  <div class="section-label light">Encuéntranos</div>
-  <h2>Sucursales</h2>
-
-  <div class="sucursales-grid">
-    <div class="sucursal-card">
-      <h3>Central</h3>
-      <p>Villamontes, Tarija</p>
-      <a href="https://maps.app.goo.gl/kujrAfSCVZJe737T6" target="_blank" class="btn-maps">
-        Ver en Google Maps →
-      </a>
+<section class="sucursales" id="sucursales">
+  <div class="suc-inner">
+    <div class="suc-left reveal">
+      <p class="eyebrow light">Encuéntranos</p>
+      <h2>Nuestras<br><em>Sucursales</em></h2>
+      <p class="suc-desc">Dos puntos de distribución en Villa Montes para atenderte de manera rápida y cercana.</p>
     </div>
-
-    <div class="sucursal-card">
-      <h3>Proveedora</h3>
-      <p>Villamontes, Tarija</p>
-      <a href="https://maps.app.goo.gl/ADoSmEAkGVHePoBo6?g_st=aw" target="_blank" class="btn-maps">
-        Ver en Google Maps →
-      </a>
+    <div class="suc-right">
+      <div class="suc-card reveal d1">
+        <span class="suc-line"></span>
+        <h3>Central</h3>
+        <p>Villa Montes, Tarija</p>
+        <a href="https://maps.app.goo.gl/kujrAfSCVZJe737T6" target="_blank">Ver en Google Maps ↗</a>
+      </div>
+      <div class="suc-card reveal d2">
+        <span class="suc-line"></span>
+        <h3>Proveedora</h3>
+        <p>Villa Montes, Tarija</p>
+        <a href="https://maps.app.goo.gl/ADoSmEAkGVHePoBo6?g_st=aw" target="_blank">Ver en Google Maps ↗</a>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- WHATSAPP FLOTANTE -->
-<a href="https://wa.me/59167679056" class="whatsapp-btn" target="_blank" aria-label="Pedir por WhatsApp">
-  <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.104.543 4.082 1.497 5.797L0 24l6.38-1.461A11.934 11.934 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.85 0-3.585-.5-5.082-1.371l-.364-.216-3.786.866.899-3.685-.237-.381A9.934 9.934 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
-  <span>Pedir ahora</span>
-</a>
-
 <!-- FOOTER -->
 <footer class="footer">
-  <div class="footer-inner">
-    <div class="footer-brand">
-      <img src="img/Logo_agua_rafa.png" alt="Logo Agua de Mesa Rafa" class="footer-logo">
-      <p>Villa Montes · Tarija · Bolivia</p>
+  <div class="footer-main">
+    <div class="footer-brand reveal">
+      <img src="img/Logo_agua_rafa.png" alt="Agua de Mesa Rafa">
+      <p>Pureza desde Villa Montes.</p>
     </div>
-    <div class="footer-info">
-      <p><strong>NIT:</strong> 5796957015</p>
-      <p><strong>Registro Sanitario:</strong> 09-02-03-01-0063</p>
-      <p><strong>Elaborado por:</strong> Maria Victoria Ysaacs Rizzo</p>
+    <div class="footer-fb reveal d1">
+      <a href="https://www.facebook.com/share/1FSMQRsxXh/" target="_blank">
+        <img src="img/Facebook.png" alt="Facebook">
+        Síguenos en Facebook
+      </a>
     </div>
   </div>
-  <div class="footer-bottom">
-    <a href="https://www.facebook.com/share/1FSMQRsxXh/" target="_blank" class="footer-fb">
-      <img src="img/Facebook.png" alt="Facebook"> Síguenos en Facebook
-    </a>
-    <p>Web creada por <strong>Brian Serrudo Beizaga</strong></p>
+  <div class="footer-sep"></div>
+  <div class="footer-base">
+    <p>NIT: 5796957015 &nbsp;·&nbsp; Reg. Sanitario: 09-02-03-01-0063 &nbsp;·&nbsp; Elaborado por: Maria Victoria Ysaacs Rizzo</p>
+    <p>Diseño web por <strong>Brian Serrudo Beizaga</strong></p>
   </div>
 </footer>
 
+<!-- WA FLOAT -->
+<a href="https://wa.me/59167679056" class="wa-float" target="_blank" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.104.543 4.082 1.497 5.797L0 24l6.38-1.461A11.934 11.934 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.85 0-3.585-.5-5.082-1.371l-.364-.216-3.786.866.899-3.685-.237-.381A9.934 9.934 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+  <span>Pedir ahora</span>
+</a>
+
 <script>
-let index = 0;
-const track = document.getElementById("sliderTrack");
+/* SLIDER */
+let idx = 0;
+const track = document.getElementById('sliderTrack');
+const dots  = document.querySelectorAll('.sl-dot');
 const total = track.children.length;
-const dots = document.querySelectorAll(".dot");
 
-function actualizarSlide(){
-  track.style.transform = "translateX(" + (-index * 100) + "%)";
-  dots.forEach((d, i) => d.classList.toggle("active", i === index));
+function actualizarSlide() {
+  track.style.transform = `translateX(${-idx * 100}%)`;
+  dots.forEach((d,i) => d.classList.toggle('active', i === idx));
+}
+function moverSlide(d) { idx = (idx + d + total) % total; actualizarSlide(); }
+function irASlide(i)   { idx = i; actualizarSlide(); }
+setInterval(() => moverSlide(1), 5500);
+
+/* WA */
+function contactar(p) {
+  window.open(`https://wa.me/59167679056?text=${encodeURIComponent('Hola, quiero pedir: ' + p)}`, '_blank');
 }
 
-function moverSlide(direccion){
-  index += direccion;
-  if(index < 0) index = total - 1;
-  if(index >= total) index = 0;
-  actualizarSlide();
-}
-
-function irASlide(i) {
-  index = i;
-  actualizarSlide();
-}
-
-setInterval(() => { moverSlide(1); }, 5000);
-
-function contactar(producto) {
-  let mensaje = "Hola, quiero comprar: " + producto;
-  let url = "https://wa.me/59167679056?text=" + encodeURIComponent(mensaje);
-  window.open(url, "_blank");
-}
-
-// Fade-in on scroll
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(e => { if(e.isIntersecting) e.target.classList.add("visible"); });
+/* SCROLL REVEAL */
+const io = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
 }, { threshold: 0.1 });
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
-document.querySelectorAll(".product-card, .sucursal-card, .proceso-item").forEach(el => {
-  observer.observe(el);
+/* NAV */
+window.addEventListener('scroll', () => {
+  document.getElementById('nav').classList.toggle('up', window.scrollY > 50);
 });
 </script>
-
 </body>
 </html>
