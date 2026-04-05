@@ -346,7 +346,7 @@ h2 {
 
 .slider {
   width: 100%;
-  height: 420px;
+  height: auto;
   overflow: hidden;
   position: relative;
   border-radius: var(--radius-lg);
@@ -355,14 +355,16 @@ h2 {
 
 .slider-track {
   display: flex;
-  height: 100%;
   transition: transform 0.65s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .slider-track img {
   min-width: 100%;
-  height: 100%;
-  object-fit: cover;
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  background: var(--blue-pale);
 }
 
 .prev, .next {
@@ -702,12 +704,40 @@ h2 {
   color: rgba(255,255,255,0.85);
 }
 
+.footer-fb {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: rgba(255,255,255,0.6);
+  text-decoration: none;
+  font-size: 13px;
+  margin-bottom: 10px;
+  transition: color 0.2s ease;
+}
+
+.footer-fb img {
+  width: 20px;
+  filter: brightness(10) opacity(0.6);
+}
+
+.footer-fb:hover {
+  color: rgba(255,255,255,0.9);
+}
+
+.footer-fb:hover img {
+  filter: brightness(10) opacity(0.9);
+}
+
 .footer-bottom {
   border-top: 1px solid rgba(255,255,255,0.08);
-  padding: 16px 40px;
+  padding: 20px 40px;
   font-size: 12px;
   color: rgba(255,255,255,0.4);
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
 }
 
 .footer-bottom strong {
@@ -773,7 +803,7 @@ h2 {
     padding: 0 12px;
   }
 
-  .slider { height: 260px; }
+  .slider { height: auto; }
 
   .product-card {
     width: 90%;
